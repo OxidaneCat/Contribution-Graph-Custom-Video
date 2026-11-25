@@ -147,9 +147,9 @@ def GenerateAPNG():
                         Color = Config.ColorBlack
                 else:
                     if VideoPixel > 128:
-                        Color = Config.ColorDarkGreen
-                    else:
                         Color = Config.ColorLightGreen
+                    else:
+                        Color = Config.ColorDarkGreen
 
                 for Dx in range(Config.Scale - 1):
                     for Dy in range(Config.Scale - 1):

@@ -1,5 +1,5 @@
 # Bad-Apple-Contribution-Graph
-Playing Bad Apple on github Contribution Graph with 3289 frames
+A Custom animation contribution graph playing Bad Apple on github Contribution Graph with 3289 frames.
 
 ### Contributing
 Contributions, bug reports, and feature ideas are welcome!

@@ -1,6 +1,6 @@
 import os
 GithubUsername = os.getenv ("GITHUB_ACTOR")
-GithubToken = os.getenv ("PLACEHOLDER")
+GithubToken = os.getenv ("GITHUB_TOKEN")
 
 FramesDir = "Frames"
 OutputApng = os.getenv("OUTPUT_FILE", "contribution_animation.png")

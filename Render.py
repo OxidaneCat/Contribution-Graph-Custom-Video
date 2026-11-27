@@ -157,6 +157,9 @@ def GenerateAPNG():
                                 
         ProcessedFrames.append(Canvas)
 
+    print("Current working directory:", os.getcwd())
+    print("Files in directory before save:", os.listdir('.'))
+    
     print(f"Exporting {Config.OutputApng}...")
     ProcessedFrames[0].save(Config.OutputApng, save_all=True, append_images=ProcessedFrames[1:], duration=80, loop=0, format="PNG")
     print("Successfully exported APNG")

@@ -1,1 +1,14 @@
-placeholder
+name: Profile
+on:
+  schedule: [{cron: "0 8,23 * * *"}]
+  workflow_dispatch:
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: OxidaneCat/Contribution-Graph-Custom-Video@main
+        with:
+          token: ${{ secrets.NAME OF THE SECRET }}

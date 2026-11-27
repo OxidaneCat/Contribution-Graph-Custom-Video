@@ -14,3 +14,8 @@ ColorWhite = (255, 255, 255, 255)  # No contribution
 ColorBlack = (0, 0, 0, 255)        # No contribution
 ColorDarkGreen = (14, 68, 41, 255) # Did contribute 
 ColorLightGreen = (57, 211, 83, 255) # Did contribute
+
+
+ActionDir = os.getenv("ACTION_PATH", os.path.dirname(os.path.abspath(__file__)))
+FramesDir = os.path.join(ActionDir, "Frames")
+OutputApng = os.getenv("OUTPUT_FILE", "contribution_animation.png")

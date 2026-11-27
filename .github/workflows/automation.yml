@@ -27,7 +27,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_ACTOR: ${{ github.repository_owner }}
-        run: python "${{ github.action_path }}/Render.py"
+        run: python Render.py
 
       - name: Commit and Push to Profile
         uses: stefanzweifel/git-auto-commit-action@v5

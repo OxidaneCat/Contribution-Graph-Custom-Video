@@ -7,7 +7,7 @@
   <img src=".github/Readme/Images/contribution_animation.png" width="100%">
 </div>
 
-### Contributing
+<h3> Contributing</h3>
 Contributions, bug reports, and feature ideas are welcome!
 1. Fork the repository.
 2. Create a new branch

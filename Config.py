@@ -1,6 +1,8 @@
 import os
 GithubUsername = os.getenv ("GITHUB_ACTOR")
 GithubToken = os.getenv ("GITHUB_TOKEN")
+if not GithubUsername or not GithubToken:
+    raise ValueError("CONFIG ERRORRRRRRRR:Missing Github username or token in Config.py!")
 
 FramesDir = "Frames"
 OutputApng = os.getenv("OUTPUT_FILE", "contribution_animation.png")

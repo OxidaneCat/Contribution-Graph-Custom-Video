@@ -1,4 +1,5 @@
-<h1>Bad-Apple-Contribution-Graph</h1>
+<h1>Contribution-Graph-Custom-Video</h1>
+<p> Previous Name: Bad-Apple-Contribution-Graph</p>
 <p> A Custom animation contribution graph playing Bad Apple on github Contribution Graph with 3289 frames.</p>
 <p> I do want to play or customize other videos. However, it takes a lot of time to edit all the files, so I'm looking forward for contributors to improve this project</p>
 

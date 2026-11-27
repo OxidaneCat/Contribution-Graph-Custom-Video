@@ -1,15 +1,14 @@
-name: Profile
+name: OxidaneCat Contribution-Graph-Custom-Video
 on:
-  # Schedule daily updates
-  schedule: [{cron: "0 8,23 * * *"}]
+  schedule: [{cron: "0 8,23 * * *"}] #THE TIME
   workflow_dispatch:
 jobs:
   render:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      
     steps:
+      - uses: actions/checkout@v4
       - uses: OxidaneCat/Contribution-Graph-Custom-Video@main
         with:
-          token: ${{ secrets.PERSONALTOKEN }}
+          token: ${{ secrets.TOKEN }} #whatever you named this

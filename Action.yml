@@ -1,0 +1,43 @@
+name: 'OxidanceCat Contribution Animation'
+description: 'custom video frames onto GitHub contribution graph.'
+
+inputs:
+  token:
+    description: 'GitHub Token'
+    required: false
+    default: ${{ github.token }}
+  user:
+    description: 'GitHub username'
+    required: false
+    default: ${{ github.repository_owner }}
+  filename:
+    description: 'Output file path'
+    required: false
+    default: 'contribution_animation.png'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Install Dependencies
+      shell: bash
+      run: pip install pillow requests
+
+    - name: Run Renderer
+      shell: bash
+      env:
+        GITHUB_TOKEN: ${{ inputs.token }}
+        GITHUB_ACTOR: ${{ inputs.user }}
+        ACTION_PATH: ${{ github.action_path }}
+        OUTPUT_FILE: ${{ inputs.filename }}
+      run: python "${{ github.action_path }}/Render.py"
+
+    - name: Commit and Push
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: "Updated Contribution Animation"
+        file_pattern: ${{ inputs.filename }}

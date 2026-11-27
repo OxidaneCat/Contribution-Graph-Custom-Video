@@ -20,5 +20,5 @@ The PolyForm license above applies only to the original source code written by m
 
 
 
-https://en.touhouwiki.net/wiki/Bad_Apple!!
+[https://en.touhouwiki.net/wiki/Bad_Apple!!](https://en.touhouwiki.net/wiki/Bad_Apple!!)
 
